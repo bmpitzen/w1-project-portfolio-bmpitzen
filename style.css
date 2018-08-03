@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
   }
   h1{
     color:white;
@@ -22,18 +23,37 @@
       max-width: 100%;
   }
   nav{
-    background-color: #3498DB;
-    border-top: 2px ECF0F1 solid;
-    border-bottom: 2px ECF0F1 solid;
+    background-color: rgb(71, 154, 210);
+    border-top: 3px rgba(29, 90, 131, 0.605) solid;
+    border-bottom: 3px rgba(29, 90, 131, 0.605) solid;
       clear: both;
-      padding: .15rem
+      padding: .15rem;
+      text-align: center;
+  }
+    nav .menu{
+      padding: 0;
   }
 nav li{
     list-style: none;
     display: inline-block;
+    color: white;
 }
 
 nav a{
     text-decoration: none;
     color:white;
+}
+@media screen and (max-width: 375px) {
+    h1{
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (min-width: 426px) {
+    nav{
+        text-align: left;
+    }
+    nav .menu{
+        padding-left: 40px;
+    }
 }
