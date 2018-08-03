@@ -7,7 +7,7 @@
       color: #2C3E50;
   }
   a{
-      color: #E74C3C;
+      color: #2C3E50;
   }
   hr{
       border: 1px solid #E74C3C;
@@ -46,21 +46,27 @@
 nav li{
     list-style: none;
     display: inline-block;
-    color: white;
+    color: #2C3E50;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 nav a{
     text-decoration: none;
-    color:white;
+    color: #2C3E50 ;
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 .profile__info{
     padding: 20px;
     margin: 0;
+    display: block;
 }
 .profile__info li{
 list-style: none;
 text-align: left;
 font-size: 1.25rem;
+display: block;
 }
 
 .aboutMe{
@@ -72,19 +78,28 @@ font-size: 1.25rem;
 footer{
     text-align: center;
     font-size: 2rem;
+    border-top: 2px solid #2C3E50;
+    border-bottom: 2px solid #2C3E50;
+    padding: 5px 0;
 }
 footer a{
     text-decoration: none;
+    padding: 10px;
+    color: #E74C3C;
 }
+
 
 
 
 
 /* Media Queries bellow here */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     h1{
         font-size: 1.75em;
+    }
+    .project__image--Desktop{
+        display: none;
     }
 }
 
@@ -103,5 +118,8 @@ footer a{
     .profile__flex--item{
         max-width: 48%;
         height: auto;
+    }
+    .project__image--Mobile{
+        display: none;
     }
 }
