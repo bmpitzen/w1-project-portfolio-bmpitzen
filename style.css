@@ -2,6 +2,16 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
   }
+  body{
+      background-color: #ECF0F1;
+      color: #2C3E50;
+  }
+  a{
+      color: #E74C3C;
+  }
+  hr{
+      border: 1px solid #E74C3C;
+  }
   h1{
     color:white;
     /* display: inline-block; */
@@ -11,10 +21,9 @@
     padding: .5rem;
   }
   .header__image {
-    display: inline-block;
-      width: 60px;
-      margin: .5rem;
-      float: left;
+    width: 60px;
+    margin: 1.25rem 0 0 1rem;
+    float: left;
   }
   header{
       background-color: #2980B9;
@@ -22,6 +31,7 @@
   img{
       max-width: 100%;
   }
+
   nav{
     background-color: rgb(71, 154, 210);
     border-top: 3px rgba(29, 90, 131, 0.605) solid;
@@ -43,6 +53,35 @@ nav a{
     text-decoration: none;
     color:white;
 }
+.profile__info{
+    padding: 20px;
+    margin: 0;
+}
+.profile__info li{
+list-style: none;
+text-align: left;
+font-size: 1.25rem;
+}
+
+.aboutMe{
+    padding: 0px 10px 0px 20px;
+}
+.aboutMe h3{
+    font-size: 2rem;
+}
+footer{
+    text-align: center;
+    font-size: 2rem;
+}
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+/* Media Queries bellow here */
+
 @media screen and (max-width: 375px) {
     h1{
         font-size: 1.75em;
@@ -55,5 +94,14 @@ nav a{
     }
     nav .menu{
         padding-left: 40px;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;    
+    }
+    .profile__flex--item{
+        max-width: 48%;
+        height: auto;
     }
 }
