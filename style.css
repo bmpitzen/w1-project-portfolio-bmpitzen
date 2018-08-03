@@ -13,6 +13,7 @@
   }
   a{
       color: #2C3E50;
+      text-decoration: none;
   }
   hr{
       border: 1px solid #E74C3C;
@@ -28,6 +29,18 @@
   h2{
       font-size: 2rem;
   }
+  h3{
+    font-size: 1.5rem;
+  }
+  h4{
+    font-size: 1.75rem;
+  }
+  h5{
+    font-weight: bold;
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+    margin: .75rem 0;
+  }
   .header__image {
     width: 60px;
     margin: 1.25rem 0 0 1rem;
@@ -42,8 +55,8 @@
 
   nav{
     background-color: rgb(71, 154, 210);
-    border-top: 3px rgba(29, 90, 131, 0.605) solid;
-    border-bottom: 3px rgba(29, 90, 131, 0.605) solid;
+    border-top: 3px rgba(231, 77, 60, 0.721) solid;
+    border-bottom: 3px rgba(231, 77, 60, 0.721) solid;
       clear: both;
       padding: .15rem;
       text-align: center;
@@ -88,17 +101,24 @@ display: block;
 .project__description{
     background-color: rgba(203, 207, 208, 0.468);
 }
-.content li{
+      
+.project__section li{
     list-style: none;
     display: inline-block;
     color: #E74C3C;
 }
 .content a{
     text-decoration: none;
-    color: #E74C3C
+    color: #E74C3C;
 }
 
+
 /* END Portfolio page css */
+/* START Resume page CSS */
+
+
+
+/* END Resume page CSS */
 footer{
     text-align: center;
     font-size: 2rem;
