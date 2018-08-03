@@ -16,7 +16,7 @@
       text-decoration: none;
   }
   hr{
-      border: 1px solid #E74C3C;
+      border: 1px solid #fc7e00;
   }
   h1{
     color:white;
@@ -47,16 +47,16 @@
     float: left;
   }
   header{
-      background-color: #2980B9;
+      background-color: #112d49;
   }
   img{
       max-width: 100%;
   }
 
   nav{
-    background-color: rgb(71, 154, 210);
-    border-top: 3px rgba(231, 77, 60, 0.721) solid;
-    border-bottom: 3px rgba(231, 77, 60, 0.721) solid;
+    background-color: #2c3e50;
+    border-top: 3px #fc7e00ad solid;
+    border-bottom: 3px #fc7e00ad solid;
       clear: both;
       padding: .15rem;
       text-align: center;
@@ -67,14 +67,14 @@
 nav li{
     list-style: none;
     display: inline-block;
-    color: #2C3E50;
+    color: #ecf0f1;
     font-size: 1.25rem;
     font-weight: bold;
 }
 
 nav a{
     text-decoration: none;
-    color: #2C3E50 ;
+    color: #ecf0f1 ;
     font-size: 1.25rem;
     font-weight: bold;
 }
@@ -105,21 +105,38 @@ display: block;
 .project__section li{
     list-style: none;
     display: inline-block;
-    color: #E74C3C;
+    color: #fc7e00;
 }
 .content a{
     text-decoration: none;
-    color: #E74C3C;
+    color: #fc7e00;
 }
 
 
 /* END Portfolio page css */
 /* START Resume page CSS */
 
+.Employement__history--job{
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+.Employement__history--company{
+    padding: 8px 8px 0 8px;
+}
+.Employement__history--position{
+    padding:0 8px;
+}
+.Employement__history--dates{
+    padding:0 8px;
+}
+.Employement__history--description{
+    padding:0 8px 8px 8px;
+}
 
 
 /* END Resume page CSS */
 footer{
+    background-color: #2c3e50;
     text-align: center;
     font-size: 2rem;
     border-top: 2px solid #2C3E50;
@@ -129,7 +146,7 @@ footer{
 footer a{
     text-decoration: none;
     padding: 10px;
-    color: #E74C3C;
+    color: #fc7e00;
 }
 
 
