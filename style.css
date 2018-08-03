@@ -6,6 +6,11 @@
       background-color: #ECF0F1;
       color: #2C3E50;
   }
+  .content{
+    max-width: 90%;
+    margin: 0 auto;
+    /* padding-left: 20px; */
+  }
   a{
       color: #2C3E50;
   }
@@ -19,6 +24,9 @@
     float: left;
     width: 75%;
     padding: .5rem;
+  }
+  h2{
+      font-size: 2rem;
   }
   .header__image {
     width: 60px;
@@ -75,6 +83,22 @@ display: block;
 .aboutMe h3{
     font-size: 2rem;
 }
+/* Portfolio page css */
+
+.project__description{
+    background-color: rgba(203, 207, 208, 0.468);
+}
+.content li{
+    list-style: none;
+    display: inline-block;
+    color: #E74C3C;
+}
+.content a{
+    text-decoration: none;
+    color: #E74C3C
+}
+
+/* END Portfolio page css */
 footer{
     text-align: center;
     font-size: 2rem;
