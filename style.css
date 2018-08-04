@@ -79,12 +79,12 @@ nav a{
     font-size: 1.25rem;
     font-weight: bold;
 }
-.profile__info{
+.profile__info__mobile{
     padding: 20px;
     margin: 0;
     display: block;
 }
-.profile__info li{
+.profile__info__mobile li{
 list-style: none;
 text-align: left;
 font-size: 1.25rem;
@@ -189,6 +189,9 @@ footer p{
     header .social{
         display: none;
     }
+    .profile__info__desktop{
+        display: none;
+    }
 }
 /* ****************TABLET**************** */
 @media screen and (min-width: 461px) and (max-width: 768px){
@@ -216,8 +219,11 @@ footer p{
     .project__image--Desktop{
         display: none;
     }
-    .profile__info li{
+    .profile__info__mobile li{
         font-size: 1.5rem;
+    }
+    .profile__info__desktop{
+        display: none;
     }
     footer .social{
         display: none;
@@ -233,6 +239,9 @@ footer p{
 }
 /* ****************DESKTOP**************** */
 @media screen and (min-width: 769PX){
+    body{
+        margin-bottom: 60px;
+    }
     nav{
         text-align: left;
     }
@@ -241,12 +250,21 @@ footer p{
     }
     .profile{
         display: flex;
-        justify-content: space-around;
-        align-items: flex-start;    
+        justify-content: left;
+        align-items: center;    
     }
-    .profile__flex--item{
-        max-width: 48%;
-        height: auto;
+    .profile img{
+        width: 20%;
+    }
+    .profile__info__desktop{
+        font-size: 1.5rem;
+        width: 35%;
+    }
+    .profile__info__mobile{
+        display: none;
+    }
+    .aboutMe{
+        display: none;
     }
     .project__image--Mobile{
         display: none;
@@ -262,8 +280,49 @@ footer p{
     .project__section h3{
         margin: 5px 0 15px 5px;
     }
-    
+    .Employement__history{
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+    }
+    hr{
+        clear:both;
+    }
+    .Employement__history--job{
+        width: 31%;
+        height: 420px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 6px;
+    }
+    .contact__info--basicInfo h3{
+        margin:0;
+    }
+    h2 {
+        margin-left: 25px;
+    }
+    .education--block{
+        margin-left: 25px;
+    }
+    .contact__info--basicInfo{
+        width: 25%;
+        float:left;
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+    .contact__info--intention{
+        float: left;
+        width: 65%;
+        margin: auto 0;
+        font-size: 1.25rem;
+    }
     footer .social{
         display: none;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width:100%;
     }
 }
