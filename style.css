@@ -102,8 +102,10 @@ header .social a{
     font-size: 2rem;
     margin: 5px;
     display: inline-block;
+
  }
  header .social{
+     display: flex;
      float: right;
      margin: 1.5rem 1rem 1.5rem 0;
  }
@@ -174,19 +176,22 @@ footer p{
 /* Media Queries bellow here */
 
 /* ****************MOBILE**************** */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
     h1{
         font-size: 1.75em;
     }
     .project__image--Desktop{
         display: none;
     }
+    .project__image--tablet{
+        display:none;
+    }
     header .social{
         display: none;
     }
 }
 /* ****************TABLET**************** */
-@media screen and (min-width: 426px) and (max-width: 768px){
+@media screen and (min-width: 461px) and (max-width: 768px){
     nav{
         text-align: left;
     }
@@ -196,7 +201,10 @@ footer p{
     .profile{
         display: flex;
         justify-content: space-around;
-        align-items: flex-start;    
+        align-items: center;    
+    }
+    .profile img{
+        width: 35%;
     }
     .profile__flex--item{
         max-width: 48%;
@@ -205,8 +213,22 @@ footer p{
     .project__image--Mobile{
         display: none;
     }
+    .project__image--Desktop{
+        display: none;
+    }
+    .profile__info li{
+        font-size: 1.5rem;
+    }
     footer .social{
         display: none;
+    }
+    .project__section{
+        border: 1.5px #112d49 solid;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .project__section h3{
+        margin: 5px 0 15px 5px;
     }
 }
 /* ****************DESKTOP**************** */
@@ -229,6 +251,18 @@ footer p{
     .project__image--Mobile{
         display: none;
     }
+    .project__image--tablet{
+        display:none;
+    }
+    .project__section{
+        border: 1.5px #112d49 solid;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .project__section h3{
+        margin: 5px 0 15px 5px;
+    }
+    
     footer .social{
         display: none;
     }
