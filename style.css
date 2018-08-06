@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  body{
+      background-color: #ECF0F1;
+      color: #2C3E50;
+  }
+  .content{
+    max-width: 90%;
+    margin: 0 auto;
+    /* padding-left: 20px; */
+  }
+
+  body a{
+      color: #2C3E50;
+      text-decoration: none;
+  }
+  hr{
+      border: 1px solid #fc7e00;
+  }
+  h1{
+    color:white;
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    float: left;
+    width: 240px;
+    padding: .5rem;
+  }
+  h2{
+      font-size: 2rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  h4{
+    font-size: 1.75rem;
+  }
+  h5{
+    font-weight: bold;
+    font-size: 1.15rem;
+    line-height: 1.25rem;
+    margin: .75rem 0;
+  }
+  .header__image {
+    width: 60px;
+    margin: 1.25rem 0 0 1rem;
+    float: left;
+  }
+  header{
+      background-color: #112d49;
+  }
+  img{
+      max-width: 100%;
+  }
+
+  nav{
+    background-color: #2c3e50;
+    border-top: 3px #fc7e00ad solid;
+    border-bottom: 3px #fc7e00ad solid;
+      clear: both;
+      padding: .15rem;
+      text-align: center;
+  }
+    nav .menu{
+      padding: 0;
+  }
+nav li{
+    list-style: none;
+    display: inline-block;
+    color: #ecf0f1;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ecf0f1 ;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.profile__info__mobile{
+    padding: 20px;
+    margin: 0;
+    display: block;
+}
+.profile__info__mobile li{
+list-style: none;
+text-align: left;
+font-size: 1.25rem;
+display: block;
+}
+
+.aboutMe{
+    padding: 0px 10px 0px 20px;
+}
+.aboutMe h3{
+    font-size: 2rem;
+}
+header .social a{
+    color: #fc7e00;
+    font-size: 2rem;
+    margin: 5px;
+    display: inline-block;
+
+ }
+ header .social{
+     display: flex;
+     float: right;
+     margin: 1.5rem 1rem 1.5rem 0;
+ }
+
+/* Portfolio page css */
+
+.project__description{
+    background-color: rgba(203, 207, 208, 0.468);
+}
+      
+.project__section li{
+    list-style: none;
+    display: inline-block;
+    color: #fc7e00;
+}
+.content a{
+    text-decoration: none;
+    color: #fc7e00;
+}
+
+
+/* END Portfolio page css */
+/* START Resume page CSS */
+
+.Employement__history--job{
+    background-color: #2C3E50;
+    color: #ECF0F1;
+}
+.Employement__history--company{
+    padding: 8px 8px 0 8px;
+}
+.Employement__history--position{
+    padding:0 8px;
+}
+.Employement__history--dates{
+    padding:0 8px;
+}
+.Employement__history--description{
+    padding:0 8px 8px 8px;
+}
+
+
+/* END Resume page CSS */
+footer{
+    background-color: #2c3e50;
+    text-align: center;
+    font-size: 2rem;
+    border-top: 2px solid #2C3E50;
+    border-bottom: 2px solid #2C3E50;
+    padding: 5px 0;
+}
+footer a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fc7e00;
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+
+
+
+
+
+/* Media Queries bellow here */
+
+/* ****************MOBILE**************** */
+@media screen and (max-width: 460px) {
+    h1{
+        font-size: 1.75em;
+    }
+    .project__image--Desktop{
+        display: none;
+    }
+    .project__image--tablet{
+        display:none;
+    }
+    header .social{
+        display: none;
+    }
+    .profile__info__desktop{
+        display: none;
+    }
+}
+/* ****************TABLET**************** */
+@media screen and (min-width: 461px) and (max-width: 768px){
+    nav{
+        text-align: left;
+    }
+    nav .menu{
+        padding-left: 85px;
+    }
+    .profile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+    }
+    .profile img{
+        width: 35%;
+    }
+    .profile__flex--item{
+        max-width: 48%;
+        height: auto;
+    }
+    .project__image--Mobile{
+        display: none;
+    }
+    .project__image--Desktop{
+        display: none;
+    }
+    .profile__info__mobile li{
+        font-size: 1.5rem;
+    }
+    .profile__info__desktop{
+        display: none;
+    }
+    footer .social{
+        display: none;
+    }
+    .project__section{
+        border: 1.5px #112d49 solid;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .project__section h3{
+        margin: 5px 0 15px 5px;
+    }
+}
+/* ****************DESKTOP**************** */
+@media screen and (min-width: 769PX){
+    body{
+        margin-bottom: 60px;
+    }
+    nav{
+        text-align: left;
+    }
+    nav .menu{
+        padding-left: 85px;
+    }
+    .profile{
+        display: flex;
+        justify-content: left;
+        align-items: center;    
+    }
+    .profile img{
+        width: 20%;
+    }
+    .profile__info__desktop{
+        font-size: 1.5rem;
+        width: 35%;
+    }
+    .profile__info__mobile{
+        display: none;
+    }
+    .aboutMe{
+        display: none;
+    }
+    .project__image--Mobile{
+        display: none;
+    }
+    .project__image--tablet{
+        display:none;
+    }
+    .project__section{
+        border: 1.5px #112d49 solid;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .project__section h3{
+        margin: 5px 0 15px 5px;
+    }
+    .Employement__history{
+        margin: 0 auto;
+        text-align: center;
+        clear: both;
+    }
+    hr{
+        clear:both;
+    }
+    .Employement__history--job{
+        width: 31%;
+        height: 420px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 6px;
+    }
+    .contact__info--basicInfo h3{
+        margin:0;
+    }
+    h2 {
+        margin-left: 25px;
+    }
+    .education--block{
+        margin-left: 25px;
+    }
+    .contact__info--basicInfo{
+        width: 25%;
+        float:left;
+        margin-bottom: 15px;
+        margin-left: 25px;
+    }
+    .contact__info--intention{
+        float: left;
+        width: 65%;
+        margin: auto 0;
+        font-size: 1.25rem;
+    }
+    footer .social{
+        display: none;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        left:0;
+        width:100%;
+    }
+}
